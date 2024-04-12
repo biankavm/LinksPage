@@ -60,7 +60,8 @@ body * {
 #container {
   /* faça a estilização aqui*/
   /*border: 1px solid red;*/
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   /*height: 712px;*/
   /* margin-left: auto; margem esquerda automática no centro
   margin-right: auto;  margem direita automática no centro 
