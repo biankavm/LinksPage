@@ -54,6 +54,7 @@ body {
 body * {
   font-family: "Inter", sans-serif;
   color: var(--cor_texto);
+  height: 100vh;
 }
 
 /* container */
@@ -189,4 +190,14 @@ footer{
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* media queries*/
+@media(min-width: 700px){ /* de 700px pra cima, faça */
+  :root{
+    --bg_url: url("./assets/bg-desktop.jpg");
+  }
+  .light{
+    --bg_url: url("./assets/bg-desktop-light.jpg");
+  }
 }
