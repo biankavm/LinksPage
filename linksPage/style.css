@@ -1,0 +1,191 @@
+*{
+  margin: 0; /* definir margem e preenchimento interno padrão do navegador como zero */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* raiz */
+:root{
+  --cor_texto: white; /* tudo que usar essa variável vai ser branco*/
+  --bg_url: url("./assets/bg-mobile.jpg");
+  --cor_traço: rgba(255, 255, 255, 0.5); /* cor da borda ao redor do botão*/
+  --cor_fundo: rgba(255, 255, 255, 0.05);
+  --cor_fundo-hover: rgba(0, 0, 0, 0.02);
+  --cor_highlight: rgba(255,255,255,0.2);
+  --imagem_button: url("./assets/MoonStars.svg");
+  --imagem_avatar: url("./assets/avatar.png");
+}
+
+.light{
+  --cor_texto: black;
+  --bg_url: url("./assets/bg-mobile-light.jpg");
+  --cor_traço: rgba(0, 0, 0, 0.5);
+  --cor_fundo: rgba(0, 0, 0, 0.02);
+  --cor_highlight: rgba(0,0,0,0.1);
+  --imagem_button: url("./assets/Sun.svg");
+  --imagem_avatar: url("./assets/avatar-light.png");
+
+}
+
+/* corpo */
+body {
+  /*
+
+  background-image: url("./assets/bg-mobile.jpg");
+  background-repeat: no-repeat; 
+  background-position: top center; 
+  background-size: cover; 
+
+  */
+
+  /* é posśivel agrupar todos os backgrounds. Isso se chama short hand ou atalho para todos os backgrounds: */
+  /* Modelo -> background: color image repeat position/size */
+  background: var(--bg_url) no-repeat top center/cover;
+
+  /*Explicações:
+    no-repeat: tira repetições da imagem
+    top center: imagem centrada no eixo x e y
+    cover: adequa o tamanho da imagem de acordo com o tamanho da tela
+  */
+}
+
+
+/* aplicar fonte no body inteiro! */
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--cor_texto);
+}
+
+/* container */
+#container {
+  /* faça a estilização aqui*/
+  /*border: 1px solid red;*/
+  width: 360px;
+  /*height: 712px;*/
+  /* margin-left: auto; margem esquerda automática no centro
+  margin-right: auto;  margem direita automática no centro 
+  
+  Pode ser trocada por apenas margin: auto */
+
+  margin: 56px auto 0px;
+  padding: 0px 24px; /* em cima e em baixo 0 e nas laterais 24px*/
+}
+
+/* profile */
+#profile {
+  text-align: center;
+  padding: 24px;
+  
+}
+
+#profile img {
+  width: 112px;
+  /*display: block;
+  margin: auto; só funciona para display: block*/
+}
+
+#profile p {
+  font-weight: 500; /* negrito */
+  font-size: 16px; /* navegadores já tem por padrão, então não precisa colocar*/
+  line-height: 24px; /* altura de linha */
+  margin-top: 8px;
+}
+
+/* botão switch */
+
+#switch{
+  position: relative; /* botão é relativo ao switch! */
+  width: 64px;
+  margin: 4px auto; /* 4px em cima e em baixo, automatico no centro nas laterais */
+}
+
+#switch button{
+  width: 32px;
+  height: 32px;
+  background: white  var(--imagem_button) no-repeat center;
+  border: 0; 
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  /* alinhamento do botão */
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0
+}
+
+#switch span{
+  display: block; /* por padrão o span é inline, e não aceita algumas propriedades. Por isso mudamos para block*/
+  width: 64px;
+  height: 24px;
+  background: var(--cor_fundo);
+  border: 1px solid var(--cor_traço);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px; /* lembre que isso é arredondamento de borda */ 
+}
+
+/* botão mudar a posição ao colocar o tema claro */
+.light #switch button{
+  right: 0;
+  left: initial; /* volta ao seu padrão inicial */
+}
+/* lista de botões */
+ul{
+  list-style: none; /* tira aquelas bolinhas dos links, deixa elas sem estilo (é necessário pra começar a personalizar) */
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* distancia entre os itens! */
+  padding: 24px 0;
+}
+
+/* tratamento dos itens da lista*/
+ul li a{
+  display: flex;
+  align-items: center; /* alinha os itens ao centro verticalmente */
+  justify-content: center;
+
+  padding: 16px 24px;
+  /* comandos do botão*/
+  background: var(--cor_fundo); /* red, green, blue, transparência*/
+  border: 1px solid var(--cor_traço); /* borda do botão*/
+  border-radius: 8px; /* arredondamento de borda em 8px*/
+  -webkit-backdrop-filter: blur(4px); /* deixa um botão com um embaçado leve (-webkit- é um filtro aplicado devido a versão 9 do safari) */
+  text-decoration: none; /* tirar a linha branca debaixo do texto */
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+ul li a:hover{
+  background: var(--cor_fundo-hover);
+  border: 1.5px solid var(--cor_texto);
+}
+
+#social-links{
+  padding: 24px 0 24px; /* 24px em cima e embaixo e 0px nas laterais*/
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 24px;
+}
+
+#social-links a{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+  transition: background 0.2s;
+  border-radius: 50%; /* arredondamento */
+
+
+}
+
+#social-links a:hover{ /* quando passar o mouse em cima */
+  background: var(--cor_highlight);
+}
+
+footer{
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}

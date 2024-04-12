@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- definição de um documento HTML -->
+<html lang="pt-br" class="">
+  <!-- elemento raiz html, é onde tudo começa. Também se define a linguagem. -->
+  <head>
+    <!-- define metaconfigurações e o título do documento -->
+    <!-- configurações de fonte abaixo, tiradas do site fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- definição de outros metadados-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- viewport: parte visível da página no navegador
+        o content define que se a largura da janela for mudada, a página será adaptada
+        escala inicia será de 1 (sem zoom) -->
+    <title>Bianka-Links</title>
+    <!-- título da aba -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- faz uma ligação com o estilo css-->
+  </head>
+  <body>
+    <!-- aqui faremos o container principal, conforme o figma -->
+    <div id="container">
+      <!-- aqui dentro temos outras caixas dentro, como a profile -->
+      <div id="profile">
+        <!-- dentro do profile há uma imagem -->
+        <img
+          src="./assets/my.png"
+          alt="Foto de Bianka ouvindo música com fone preto, cabelo castanho e sorrisinho."
+        />
+        <p>@biankavm</p>
+      </div>
+        <div id="switch" onclick="trocaTema()" >
+              
+        <button> </button>
+        <span> </span>
+      </div>
+      <ul>
+
+        <li>  
+          <a href="https://github.com/biankavm" target="_blank"> Veja meu portifólio </a> 
+        </li>
+        <li>
+          <a href="https://github.com/biankavm?tab=repositories" target="_blank"> Trabalhos Acadêmicos </a>
+        </li>
+
+        <li>
+          <a href="#"> Veja mais Projetos Pessoais </a>
+        </li>
+
+      </ul>
+      <!-- parte dos icones -->
+      <div id="social-links"> 
+        <a href="https://github.com/biankavm" target="_blank">
+          <ion-icon name="logo-github"></ion-icon> <!-- comando retirado do ionicons para colocar icones -->
+        </a>
+
+        <a href="https://www.instagram.com/bianka_vm/" target="_blank"> 
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="https://www.youtube.com/@biankavm/featured" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+
+        <a href="https://www.linkedin.com/in/biankavmaciel/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+
+      <footer>
+        Feito com auxílio de  <a href="https://rocketseat.com.br" target="_blank">Rocketseat </a> 
+        🌟
+      </footer>
+
+    </div>
+    <!-- scripts do site ionicons para que seja possível adicionar os icones. -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
