@@ -101,6 +101,7 @@ body * {
 }
 
 #switch button{
+  animation: botao_volta .2s; /* aqui nao precisa de forwards, pois já é o instante inicial da animação*/
   width: 32px;
   height: 32px;
   background: white  var(--imagem_button) no-repeat center;
@@ -114,6 +115,18 @@ body * {
   left: 0
 }
 
+/* botão mudar a posição ao colocar o tema claro */
+.light #switch button{
+  /*right: 0;*/
+  /*left: initial;  volta ao seu padrão inicial */
+  animation: botao_ida .2s forwards; /* nome_animação - tempo de duração - manter a animação quando o botão for clicado */
+}
+
+#switch button:hover{
+   outline: 8px solid var(--cor_highlight);
+   
+}
+
 #switch span{
   display: block; /* por padrão o span é inline, e não aceita algumas propriedades. Por isso mudamos para block*/
   width: 64px;
@@ -124,11 +137,7 @@ body * {
   border-radius: 9999px; /* lembre que isso é arredondamento de borda */ 
 }
 
-/* botão mudar a posição ao colocar o tema claro */
-.light #switch button{
-  right: 0;
-  left: initial; /* volta ao seu padrão inicial */
-}
+
 /* lista de botões */
 ul{
   list-style: none; /* tira aquelas bolinhas dos links, deixa elas sem estilo (é necessário pra começar a personalizar) */
@@ -198,5 +207,24 @@ footer{
   }
   .light{
     --bg_url: url("./assets/bg-desktop-light.jpg");
+  }
+}
+
+/* animations */
+@keyframes botao_ida{
+  from{
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+}
+
+@keyframes botao_volta {
+  from{
+    left: 50%
+  } 
+  to{
+    left: 0
   }
 }
