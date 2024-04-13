@@ -54,7 +54,6 @@ body {
 body * {
   font-family: "Inter", sans-serif;
   color: var(--cor_texto);
-  height: 100vh;
 }
 
 /* container */
