@@ -2,17 +2,7 @@
 
 Este repositório contém os meus projetos pessoais relacionados ao desenvolvimento web.
 
-## LinksPage
+- `Rocketseat`: Nessa pasta há o projeto LinksPage, meu primeiro projeto web desenvolvido durante o curso Discover na plataforma Rocketseat. Esse projeto utiliza conceitos de HTML, CSS e Javascript. Nele, criei uma página de links, que redireciona o usuário a outras páginas e permite a troca entre temas claro e escuro.
 
-O projeto LinksPage foi o meu primeiro projeto web, desenvolvido durante o curso Discover da plataforma Rocketseat. Ele está localizado na pasta `LinksPage`, que contém os seguintes arquivos:
-
-- `index.html`: Este arquivo contém todo o código HTML necessário para criar a página de links.
-- `style.css`: Aqui, você encontrará os estilos aplicados ao HTML desenvolvido no `index.html`.
-- `script.js`: Este arquivo contém as animações necessárias para a troca de temas na página de links.
-- `assets/`: Esta pasta contém os backgrounds e imagens utilizados na estilização do site.
-
-Durante o desenvolvimento deste projeto, foquei em aprender e aplicar os conceitos básicos de HTML, CSS e JavaScript, pois foi o meu primeiro projeto na área de Frontend.
-
-[Acesse o projeto aqui](https://biankavm.github.io/Projetos-Web/linksPage/)
-
-Fico grata por analisar esse código, fique a vontade para explorá-lo e aprender junto comigo. Qualquer feedback ou sugestão é sempre bem-vindo 😁
+- `Udemy`: Essa pasta contém meus projetos desenvolvidos durante o meu curso completo de desenvolvimento web na plataforma Udemy. O primeiro e mais recente até o momento foi o UNES, em que desenvolvi um site para uma universidade fictícia chamada UNES, trabalhando principalmente os conceitos de tabelas em HTML, dentre outros fundamentos.
+  
