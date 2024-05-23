@@ -1,3 +1,29 @@
 body{
-    background-image: url('/assets/fundo.png');
+    background: #d2d2c1 url('/assets/fundo.png');
+    font: 16px Inter;
+}
+
+#principal{
+    width: 900px;
+}
+
+#menu{
+    background: #c5c5b2;
+    padding: 15px;
+}
+
+#conteudo {
+    background: #e8e8d9;
+    padding: 10px;
+}
+
+a{
+    color: #4b566a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.centralizar{ /* classe para centralizar textos */
+    text-align: center;
 }
