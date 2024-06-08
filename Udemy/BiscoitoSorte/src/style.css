@@ -23,3 +23,16 @@ body{
     width: 400px;
     height: 400px;
 }
+
+.botao{
+    border: solid 1px #DD7B22;
+    border-radius: 20px;
+    color: white;
+    background-color: #DD7B22;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+.botao:hover{
+    background-color: DD7B22;
+    color: white;
+    transform: scale(1.2)
+}
