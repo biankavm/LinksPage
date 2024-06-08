@@ -27,3 +27,7 @@ a{
 .centralizar{ /* classe para centralizar textos */
     text-align: center;
 }
+
+h1{
+    color: #828271;
+}
