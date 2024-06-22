@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    justify-content: space-around; /* ou space-between*/
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: rgb(119, 21, 21);
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointersa;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.favoritos{
+    text-decoration: none; /* tirar a formatação de link e deixar mais como um botão*/
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 14px;
+    color: black;
+    border-radius: 4px; /* arredondamento das bordas */
+}

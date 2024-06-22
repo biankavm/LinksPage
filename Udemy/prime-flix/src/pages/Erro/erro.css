@@ -1,0 +1,22 @@
+.not-found{
+    width: 100%;
+    height: calc(100vh-60px); /* 100vh = 100% do view high, mas assim tem scroll, pois não sabe que tem um deader de 60px. Logo, temos que diminuir 100-60 para ele pegar a altura restante da tela*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.not-found h1{
+    font-size: 120px;
+}
+
+.not-found a{
+    text-decoration: none;
+    background-color: #116feb;
+    color: #FFF;
+    padding: 10px;
+    margin-top: 14px;
+    border-radius: 5px;
+
+}
