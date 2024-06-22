@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Projeto Prime Strid
 
 Para rodar esse projeto, execute no terminal:
 
